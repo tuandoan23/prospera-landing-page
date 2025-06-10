@@ -18,7 +18,7 @@ const OpenTickets: NextPage<Props> = ({}) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="min-w-36 rounded-2xl bg-gradient-to-br from-[#404040] to-[#101010] p-2 sm:p-3"
+      className="min-w-36 rounded-2xl bg-gradient-to-br from-[#191919] to-[#101010] p-2 sm:p-3"
     >
       <div className="mb-5 flex justify-between">
         <div>

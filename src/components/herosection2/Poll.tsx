@@ -18,7 +18,7 @@ const Poll: NextPage<Props> = ({}) => {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
-      className="min-w-36 rounded-2xl bg-gradient-to-br from-[#404040] to-[#101010] p-2 sm:p-3"
+      className="min-w-36 rounded-2xl bg-gradient-to-br from-[#191919] to-[#101010] p-2 sm:p-3"
     >
       <div className="mb-2">
         <p className="text-secondary text-[7px]">POLL</p>

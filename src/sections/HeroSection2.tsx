@@ -20,7 +20,7 @@ const HeroSection2: NextPage<Props> = ({}) => {
           className="inline-block"
         >
           <motion.h2
-            className="mr-2.5 inline-block text-left text-3xl leading-tight font-bold"
+            className="mr-2.5 inline-block text-left text-3xl leading-tight font-bold md:text-5xl"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -31,7 +31,7 @@ const HeroSection2: NextPage<Props> = ({}) => {
             A
           </motion.h2>
           <motion.h2
-            className="inline-block bg-gradient-to-b from-[#2a0a9a] to-[#d2a6ca] bg-clip-text text-left text-3xl leading-tight font-bold text-transparent"
+            className="inline-block bg-gradient-to-b from-[#2a0a9a] to-[#d2a6ca] bg-clip-text text-left text-3xl leading-tight font-bold text-transparent md:text-5xl"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -51,7 +51,7 @@ const HeroSection2: NextPage<Props> = ({}) => {
           }}
         >
           <motion.h2
-            className="text-left text-3xl leading-tight font-bold"
+            className="text-left text-3xl leading-tight font-bold md:text-5xl"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
