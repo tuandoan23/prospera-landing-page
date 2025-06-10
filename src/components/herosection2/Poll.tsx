@@ -1,5 +1,7 @@
+"use client";
 import { NextPage } from "next";
 import React from "react";
+import { motion } from "framer-motion";
 
 type LayoutWrapperProps = {
   children: React.ReactNode;
@@ -11,7 +13,13 @@ const items = ["Swift(iOS native)", "React Native", "Android Studio", "Slack"];
 
 const Poll: NextPage<Props> = ({}) => {
   return (
-    <div className="min-w-36 rounded-2xl bg-gradient-to-br from-[#404040] to-[#101010] p-2 sm:p-6">
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="min-w-36 rounded-2xl bg-gradient-to-br from-[#404040] to-[#101010] p-2 sm:p-3"
+    >
       <div className="mb-2">
         <p className="text-secondary text-[7px]">POLL</p>
         <p className="text-sm font-bold">
@@ -23,7 +31,7 @@ const Poll: NextPage<Props> = ({}) => {
           return <PollItem key={index}>{i}</PollItem>;
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

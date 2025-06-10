@@ -1,10 +1,25 @@
+"use client";
 import { NextPage } from "next";
+import { motion } from "framer-motion";
 
 interface Props {}
 
 const OpenTickets: NextPage<Props> = ({}) => {
   return (
-    <div className="min-w-36 rounded-2xl bg-gradient-to-br from-[#404040] to-[#101010] p-2 sm:p-6">
+    <motion.div
+      // initial={{ opacity: 0, x: -50 }}
+      // whileInView={{ opacity: 1, x: 0 }}
+      // viewport={{ once: true }}
+      // transition={{ duration: 0.7 }}
+      variants={{
+        hidden: { opacity: 0, x: -50 },
+        visible: { opacity: 1, x: 0, transition: { duration: 0.7 } },
+      }}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="min-w-36 rounded-2xl bg-gradient-to-br from-[#404040] to-[#101010] p-2 sm:p-3"
+    >
       <div className="mb-5 flex justify-between">
         <div>
           <p className="text-secondary text-[7px]">Open Tickets</p>
@@ -35,7 +50,7 @@ const OpenTickets: NextPage<Props> = ({}) => {
           <p className="text-7b text-[9px]">Most closed</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

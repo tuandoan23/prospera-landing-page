@@ -71,7 +71,7 @@ const HeroSection: NextPage<Props> = ({}) => {
             <div className="h-2 w-2 rounded-full bg-[var(--color-green)]"></div>
           </div>
           <motion.div
-            className="flex items-center space-x-[-10px]" // Overlapping avatars
+            className="flex items-center space-x-[-10px]"
             initial="hidden"
             animate="visible"
             variants={containerVariants}

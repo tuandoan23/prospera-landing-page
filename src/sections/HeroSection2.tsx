@@ -21,18 +21,22 @@ const HeroSection2: NextPage<Props> = ({}) => {
         >
           <motion.h2
             className="mr-2.5 inline-block text-left text-3xl leading-tight font-bold"
-            variants={{
-              hidden: { opacity: 0, x: -20 },
-              visible: { opacity: 1, x: 0 },
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.7,
             }}
           >
             A
           </motion.h2>
           <motion.h2
             className="inline-block bg-gradient-to-b from-[#2a0a9a] to-[#d2a6ca] bg-clip-text text-left text-3xl leading-tight font-bold text-transparent"
-            variants={{
-              hidden: { opacity: 0, x: 20 },
-              visible: { opacity: 1, x: 0 },
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.7,
             }}
           >
             New Easy
@@ -48,38 +52,40 @@ const HeroSection2: NextPage<Props> = ({}) => {
         >
           <motion.h2
             className="text-left text-3xl leading-tight font-bold"
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.7,
             }}
           >
             Way to Create
           </motion.h2>
         </motion.div>
       </div>
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-6">
-        <div className="order-1 md:order-none md:col-start-1 md:row-span-1">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-6">
+        <div className="md:row-span order-1 md:order-none md:col-start-1 md:row-span-1">
           <OpenTickets />
         </div>
-        <div className="order-2 md:order-none md:col-start-2 md:row-span-1">
+        <div className="order-2 md:order-none md:col-start-1 md:row-start-2">
           <Poll />
         </div>
-        <div className="order-4 md:order-none md:col-start-3 md:row-span-1">
-          Card 3
+        <div className="order-4 md:order-none md:col-start-2 md:row-span-1 md:row-start-2 md:-mt-10">
+          <OpenTickets />
         </div>
-        <div className="order-3 md:order-none md:col-start-1 md:row-start-2">
-          Card 4
+        <div className="order-3 md:order-none md:col-start-3 md:row-start-2 md:-mt-24">
+          <Poll />
         </div>
-        <div className="order-5 md:order-none md:col-start-5 md:row-span-1">
+        <div className="order-5 md:order-none md:col-start-4 md:row-span-1">
           Card 5
         </div>
-        <div className="order-6 md:order-none md:col-start-4 md:row-span-1">
+        <div className="order-6 md:order-none md:col-start-5 md:row-span-1">
           Card 6
         </div>
-        <div className="order-8 md:order-none md:col-start-6 md:row-span-1">
+        <div className="order-8 md:order-none md:col-start-5 md:row-span-1">
           Card 7
         </div>
-        <div className="order-7 md:order-none md:col-start-5 md:row-start-2">
+        <div className="order-7 md:order-none md:col-start-6 md:row-start-2">
           Card 8
         </div>
       </div>
