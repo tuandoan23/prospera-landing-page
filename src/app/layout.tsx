@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "@/styles/fonts.css";
-import Header from "../sections/header";
-import Footer from "../sections/footer";
+import Header from "../sections/Header";
+import Footer from "../sections/Footer";
 
 export const metadata: Metadata = {
   title: "Prospera",

@@ -30,9 +30,12 @@ body {
 @theme {
   --font-display: "Lorin", "sans-serif";
   --font-body: "Lorin", "serif";
+  --color-primary: #2a0a9a;
+  --color-secondary: #a594fd;
   --color-red: #ba0e0e;
   --color-orange: #ef930a;
   --color-green: #0ccb2a;
+  --color-7b: #7b7b7b;
 }
 
 @layer utilities {

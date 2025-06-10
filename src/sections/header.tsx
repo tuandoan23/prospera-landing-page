@@ -72,7 +72,7 @@ const Header: NextPage<Props> = ({}) => {
                   <Link
                     key={item.id}
                     href={item.route}
-                    className="text-sm text-[#7B7B7B] transition-all duration-500 hover:text-white"
+                    className="text-7b text-sm transition-all duration-500 hover:text-white"
                   >
                     {item.title}
                   </Link>

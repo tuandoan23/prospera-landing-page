@@ -35,6 +35,10 @@ const sidebar = [
     icon: timelineIcon,
   },
   {
+    text: "Numbers",
+    icon: numbersIcon,
+  },
+  {
     text: "More",
     icon: moreIcon,
   },
@@ -56,7 +60,7 @@ const itemVariants = {
 
 interface Props {}
 
-const Hero: NextPage<Props> = ({}) => {
+const HeroSection: NextPage<Props> = ({}) => {
   return (
     <div className="mx-auto p-3 sm:px-6 md:max-w-9/12 lg:px-8">
       <div className="rounded-2xl border-[1px] border-[#3E3E3E] p-3">
@@ -231,4 +235,4 @@ const Hero: NextPage<Props> = ({}) => {
   );
 };
 
-export default Hero;
+export default HeroSection;

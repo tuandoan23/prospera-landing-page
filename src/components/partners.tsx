@@ -10,7 +10,7 @@ import ssoftwareImg from "@/assets/images/partners/ssoftware.png";
 import techCrunchImg from "@/assets/images/partners/techcrunch.png";
 import forbesImg from "@/assets/images/partners/forbes.png";
 
-let partners = [
+const partners = [
   techCrunchImg,
   forbesImg,
   ssoftwareImg,
@@ -82,7 +82,7 @@ const Partners: NextPage<Props> = ({}) => {
         Trusted by 4,000 leading companies
       </h1>
 
-      <div className="w-full overflow-hidden bg-black py-4 whitespace-nowrap text-white">
+      <div className="w-full overflow-hidden py-4 whitespace-nowrap text-white">
         <motion.div
           id="scrolling-partners"
           className="flex gap-10 hover:[animation-play-state:paused] lg:gap-20"
