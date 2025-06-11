@@ -1,20 +1,20 @@
 "use client";
 import { NextPage } from "next";
 import { motion } from "framer-motion";
+import useMediaQuery from "@/hooks/useMediaQuery";
+import { fadeInDown, fadeInLeft } from "@/animations/variants";
 
 interface Props {}
 
 const OpenTickets: NextPage<Props> = ({}) => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <motion.div
       // initial={{ opacity: 0, x: -50 }}
       // whileInView={{ opacity: 1, x: 0 }}
       // viewport={{ once: true }}
       // transition={{ duration: 0.7 }}
-      variants={{
-        hidden: { opacity: 0, x: -50 },
-        visible: { opacity: 1, x: 0, transition: { duration: 0.7 } },
-      }}
+      variants={isMobile ? fadeInLeft : fadeInDown}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}

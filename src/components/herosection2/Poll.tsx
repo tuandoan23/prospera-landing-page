@@ -2,6 +2,8 @@
 import { NextPage } from "next";
 import React from "react";
 import { motion } from "framer-motion";
+import useMediaQuery from "@/hooks/useMediaQuery";
+import { fadeInRight, fadeInUp } from "@/animations/variants";
 
 type LayoutWrapperProps = {
   children: React.ReactNode;
@@ -12,12 +14,13 @@ interface Props {}
 const items = ["Swift(iOS native)", "React Native", "Android Studio", "Slack"];
 
 const Poll: NextPage<Props> = ({}) => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <motion.div
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      variants={isMobile ? fadeInRight : fadeInUp}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
       className="min-w-36 rounded-2xl bg-gradient-to-br from-[#191919] to-[#101010] p-2 sm:p-3"
     >
       <div className="mb-2">
