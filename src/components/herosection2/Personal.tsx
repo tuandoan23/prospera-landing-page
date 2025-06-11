@@ -69,7 +69,7 @@ const PersonalCard = () => {
           <p className="text-7b text-[7px]">Sales Amount</p>
         </div>
       </div>
-      <div className="bg-7b h-[1px] w-full"></div>
+      <div className="bg-7b h-[0.1px] w-full"></div>
       <div className="flex flex-col gap-1">
         <div className="flex gap-1">
           <Image src={icon} alt="icon" className="h-4 w-4" />

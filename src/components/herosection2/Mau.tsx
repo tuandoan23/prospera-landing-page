@@ -22,7 +22,7 @@ const Mau: NextPage<Props> = ({}) => {
           <p className="text-sm font-bold">Mar 2023</p>
         </div>
         <div
-          className="text-7b h-fit rounded-xl border-[1px] border-[#1E1E1E] px-2 py-1.5 text-[7px]"
+          className="text-7b h-fit rounded-xl border-[1px] border-[#1E1E1E] px-2 py-1 text-[7px]"
           style={{
             background: "linear-gradient(90deg, #191919 45%, #424242 100%)",
           }}
