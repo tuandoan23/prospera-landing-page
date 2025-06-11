@@ -3,7 +3,7 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import useMediaQuery from "@/hooks/useMediaQuery";
-import { fadeInDown, fadeInLeft } from "@/animations/variants";
+import { fadeInUp, fadeInRight } from "@/animations/variants";
 import journey from "@/assets/images/journey.png";
 
 interface Props {}
@@ -28,7 +28,7 @@ const Timeline: NextPage<Props> = ({}) => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <motion.div
-      variants={isMobile ? fadeInLeft : fadeInDown}
+      variants={isMobile ? fadeInRight : fadeInUp}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}

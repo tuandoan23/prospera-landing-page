@@ -2,7 +2,7 @@
 import { NextPage } from "next";
 import { motion } from "framer-motion";
 import useMediaQuery from "@/hooks/useMediaQuery";
-import { fadeInDown, fadeInLeft } from "@/animations/variants";
+import { fadeInDown, fadeInRight } from "@/animations/variants";
 
 interface Props {}
 
@@ -10,7 +10,7 @@ const States: NextPage<Props> = ({}) => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <motion.div
-      variants={isMobile ? fadeInLeft : fadeInDown}
+      variants={isMobile ? fadeInRight : fadeInDown}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
