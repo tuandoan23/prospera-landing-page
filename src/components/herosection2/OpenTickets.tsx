@@ -28,7 +28,7 @@ const OpenTickets: NextPage<Props> = ({}) => {
         <div
           className="text-7b h-fit rounded-xl border-[1px] border-[#1E1E1E] px-2 py-1.5 text-[7px]"
           style={{
-            background: "linear-gradient(270deg, #191919 45%, #424242 100%)",
+            background: "linear-gradient(90deg, #191919 45%, #424242 100%)",
           }}
         >
           This Week

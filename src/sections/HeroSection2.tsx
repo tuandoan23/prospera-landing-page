@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import OpenTickets from "@/components/herosection2/OpenTickets";
 import Poll from "@/components/herosection2/Poll";
 import Mau from "@/components/herosection2/Mau";
+import StackImage from "@/components/herosection2/StackImage";
 
 interface Props {}
 
@@ -75,7 +76,7 @@ const HeroSection2: NextPage<Props> = ({}) => {
           <Mau />
         </div>
         <div className="order-3 md:order-none md:col-start-3 md:row-start-2 md:-mt-24">
-          <Poll />
+          <StackImage />
         </div>
         <div className="order-5 md:order-none md:col-start-4 md:row-span-1">
           Card 5
