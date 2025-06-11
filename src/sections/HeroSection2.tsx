@@ -7,6 +7,7 @@ import Mau from "@/components/herosection2/Mau";
 import StackImage from "@/components/herosection2/StackImage";
 import Personal from "@/components/herosection2/Personal";
 import States from "@/components/herosection2/States";
+import Timeline from "@/components/herosection2/Timeline";
 
 interface Props {}
 
@@ -87,7 +88,7 @@ const HeroSection2: NextPage<Props> = ({}) => {
           <States />
         </div>
         <div className="order-8 md:order-none md:col-start-5 md:row-span-1">
-          Card 7
+          <Timeline />
         </div>
         <div className="order-7 md:order-none md:col-start-6 md:row-start-2">
           Card 8
